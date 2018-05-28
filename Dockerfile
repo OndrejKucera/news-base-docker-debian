@@ -6,12 +6,12 @@ FROM openjdk:8u151-jre-stretch
 MAINTAINER Ondrej Kucera <ondra.kuca@gmail.com>
 
 # Scala related variables.
-ARG SCALA_VERSION=2.11.12
+ARG SCALA_VERSION=2.12.16
 ARG SCALA_BINARY_ARCHIVE_NAME=scala-${SCALA_VERSION}
 ARG SCALA_BINARY_DOWNLOAD_URL=https://downloads.lightbend.com/scala/${SCALA_VERSION}/${SCALA_BINARY_ARCHIVE_NAME}.tgz
 
 # SBT related variables.
-ARG SBT_VERSION=1.1.0
+ARG SBT_VERSION=1.1.4
 ARG SBT_BINARY_ARCHIVE_NAME=sbt-${SBT_VERSION}
 ARG SBT_BINARY_DOWNLOAD_URL=https://github.com/sbt/sbt/releases/download/v${SBT_VERSION}/${SBT_BINARY_ARCHIVE_NAME}.tgz
 
